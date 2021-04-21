@@ -13,7 +13,7 @@
         putImagesRandomPosition();
         setTimeout(doMasonry, 500);
         setTimeout(makeImagesSlideIn, 1500);
-        setTimeout(redoMasonry, 2400);
+        // setTimeout(redoMasonry, 2400);
         setTimeout(removeOverflowfromBody, 2500);
 
 
@@ -55,11 +55,17 @@
             $body.removeClass('overflow_hidden');
         }
 
-        function redoMasonry() {
-            console.log('redo masonry', msnry);
-            // $('.grid').masonry('layout');
-            msnry.reloadItems();
-        }
+
+        // NOT WORKING
+        // $(window).on('resize', function (e) {
+
+        //     redoMasonry();
+        // })
+        // function redoMasonry() {
+        //     console.log('redo masonry', msnry);
+        //     // $('.grid').masonry('layout');
+        //     msnry.reloadItems();
+        // }
 
 
         function makeImagesSlideIn() {
@@ -70,10 +76,8 @@
             $body.removeClass('loading');
         }
 
-        $(window).on('resize', function (e) {
 
-            redoMasonry();
-        })
+
 
 
 
