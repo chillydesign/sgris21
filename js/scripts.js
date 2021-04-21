@@ -8,10 +8,11 @@
         //MASONRY GALLERY
         putImagesRandomPosition();
         setTimeout(doMasonry, 500);
-        setTimeout(doMasonry, 1000);
+        setTimeout(redoMasonry, 1000);
         setTimeout(makeImagesSlideIn, 1500);
 
 
+        let $grid;
 
         function putImagesRandomPosition() {
 
@@ -31,18 +32,26 @@
 
 
         function doMasonry() {
-            $('.grid').masonry({
+            $grid = $('.grid').masonry({
                 // options
                 itemSelector: '.grid-item',
                 columnWidth: 20
             });
 
         }
+        function redoMasonry() {
+            console.log('redo masonry');
+            $grid.masonry('layout');
+        }
 
         function makeImagesSlideIn() {
             $('.grid-item').removeClass('invisible');
             $('.grid-item').addClass('visible');
         }
+
+        $(window).on('resize', function (e) {
+            redoMasonry();
+        })
 
 
 
