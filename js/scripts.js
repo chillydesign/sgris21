@@ -58,6 +58,7 @@
         }
 
         $(window).on('resize', function (e) {
+            console.log('resize');
             doMasonry();
         })
 
