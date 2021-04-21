@@ -1,3 +1,3 @@
-# Wordpress theme for Chalet Agate
+# Wordpress theme for Stefano Gris
 
-Wordpress theme for Chalet Agate
+Wordpress theme for Stefano Gris
