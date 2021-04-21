@@ -13,6 +13,7 @@
         putImagesRandomPosition();
         setTimeout(doMasonry, 500);
         setTimeout(makeImagesSlideIn, 1500);
+        setTimeout(redoMasonry, 2400);
         setTimeout(removeOverflowfromBody, 2500);
 
 
@@ -48,6 +49,12 @@
             $body.removeClass('overflow_hidden');
         }
 
+        function redoMasonry() {
+            console.log('redo masonry');
+            $('.grid').masonry('layout');
+
+        }
+
 
         function makeImagesSlideIn() {
             $('.grid-item').removeClass('invisible');
@@ -58,8 +65,8 @@
         }
 
         $(window).on('resize', function (e) {
-            console.log('resize');
-            doMasonry();
+
+            redoMasonry();
         })
 
 
