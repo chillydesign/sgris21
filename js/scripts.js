@@ -6,15 +6,20 @@
 
 
         //MASONRY GALLERY
+        doMasonry()
 
-        $('.grid').masonry({
-            // options
-            itemSelector: '.grid-item',
-            columnWidth: 20
-        });
 
-        // setTimeout(function () { msnry.layout(); }, 100);
-        // setTimeout(function () { msnry.layout(); }, 250);
+        function doMasonry() {
+            $('.grid').masonry({
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 20
+            });
+
+        }
+
+        setTimeout(doMasonry, 500);
+        setTimeout(doMasonry, 1250);
 
         //END OF MASONRY GALLERY
 
