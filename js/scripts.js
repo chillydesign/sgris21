@@ -6,18 +6,27 @@
 
 
         //MASONRY GALLERY
-        doMasonry()
+        putImagesRandomPosition();
+        setTimeout(doMasonry, 500);
+        setTimeout(makeImagesSlideIn, 1000);
 
-        $('.grid').each(function (i) {
-            var $this = $(this);
-            var randomX = (Math.random() - 0.5) * 2000;
-            var randomY = (Math.random() - 0.5) * 2000;
-            console.log({ randomX, randomY });
-            $this.css({
-                "-webkit-transform": "translate(" + randomX + "px," + randomY + "px)",
-                "transform": "translate(" + randomX + "px," + randomY + "px)",
+
+
+        function putImagesRandomPosition() {
+
+
+            $('.grid-item').each(function (i) {
+                var $this = $(this);
+                var randomX = (Math.random() - 0.5) * 2000;
+                var randomY = (Math.random() - 0.5) * 2000;
+                $this.css({
+                    "-webkit-transform": "translate(" + randomX + "px," + randomY + "px)",
+                    "transform": "translate(" + randomX + "px," + randomY + "px)",
+                });
+                $this.addClass('invisible');
             });
-        });
+        }
+
 
 
         function doMasonry() {
@@ -29,10 +38,12 @@
 
         }
 
-        setTimeout(doMasonry, 500);
-        setTimeout(doMasonry, 1250);
+        function makeImagesSlideIn() {
+            $('.grid-item').removeClass('invisible');
+            $('.grid-item').addClass('visible');
+        }
 
-        //END OF MASONRY GALLERY
+
 
 
     })
