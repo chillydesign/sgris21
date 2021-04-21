@@ -39,9 +39,9 @@
             });
 
         }
-        function redoMasonry() {
-            console.log('redo masonry');
-            $grid.masonry('layout');
+        function redoMasonry(grid) {
+            console.log('redo masonry'), grid;
+            grid.masonry('layout');
         }
 
         function makeImagesSlideIn() {
@@ -50,7 +50,7 @@
         }
 
         $(window).on('resize', function (e) {
-            redoMasonry();
+            redoMasonry($grid);
         })
 
 
