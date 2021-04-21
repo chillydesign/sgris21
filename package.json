@@ -1,14 +1,14 @@
 {
-  "name": "chaletagatetheme",
+  "name": "sgris_21_theme",
   "version": "0.0.1",
-  "description": "This is the Chalet agate wordpress theme made by webfactor.ch.",
+  "description": "This is the Sgris wordpress theme made by webfactor.ch.",
   "main": "index.php",
   "scripts": {
     "test": "say test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chillydesign/chaletagate.git"
+    "url": "git+https://github.com/chillydesign/sgris21.git"
   },
   "keywords": [
     "wordpress",
@@ -19,9 +19,9 @@
   "author": "Charles Harvey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chillydesign/chaletagate/issues"
+    "url": "https://github.com/chillydesign/sgris21/issues"
   },
-  "homepage": "https://github.com/chillydesign/chaletagate#readme",
+  "homepage": "https://github.com/chillydesign/sgris21#readme",
   "dependencies": {
     "featherlight": "^1.7.12",
     "jquery": "^3.3.1",
