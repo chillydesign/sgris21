@@ -9,9 +9,9 @@
         doMasonry()
 
         $('.grid').each(function (i) {
-            $this = $(this);
-            randomX = (Math.random() - 0.5) * 2000;
-            randomY = (Math.random() - 0.5) * 2000;
+            var $this = $(this);
+            var randomX = (Math.random() - 0.5) * 2000;
+            var randomY = (Math.random() - 0.5) * 2000;
             console.log({ randomX, randomY });
             $this.css({
                 "-webkit-transform": "translate(" + randomX + "px," + randomY + "px)",
