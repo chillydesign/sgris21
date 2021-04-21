@@ -30,7 +30,7 @@
                         <div class="grid-item <?php echo $classname; ?>">
                             <div class="grid_item_inner">
                                 <a href="<?php echo get_sub_field('link'); ?>" target="_blank">
-                                    <img src="<?php echo get_sub_field('image')['url']; ?>" alt="">
+                                    <img src="<?php echo get_sub_field('image')['sizes']['medium']; ?>" alt="">
                                 </a>
                             </div>
                         </div>
