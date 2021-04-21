@@ -35,13 +35,19 @@
         }
 
 
-
+        let msnry;
         function doMasonry() {
-            $('.grid').masonry({
+
+            const masonryOptions = {
                 // options
                 itemSelector: '.grid-item',
                 columnWidth: 20
-            });
+            }
+
+            // $('.grid').masonry(masonryOptions);
+            msnry = new Masonry('.grid', masonryOptions);
+
+
 
         }
 
@@ -50,9 +56,9 @@
         }
 
         function redoMasonry() {
-            console.log('redo masonry');
-            $('.grid').masonry('layout');
-
+            console.log('redo masonry', msnry);
+            // $('.grid').masonry('layout');
+            msnry.layout();
         }
 
 
