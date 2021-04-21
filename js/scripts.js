@@ -11,7 +11,7 @@
 
         //MASONRY GALLERY
         putImagesRandomPosition();
-        setTimeout(doMasonry, 500);
+        setTimeout(doMasonry, 800);
         setTimeout(makeImagesSlideIn, 1500);
         // setTimeout(redoMasonry, 2400);
         setTimeout(removeOverflowfromBody, 2500);
