@@ -58,7 +58,7 @@
         function redoMasonry() {
             console.log('redo masonry', msnry);
             // $('.grid').masonry('layout');
-            msnry.layout();
+            msnry.reloadItems();
         }
 
 
