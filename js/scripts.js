@@ -7,8 +7,9 @@
 
         //MASONRY GALLERY
         putImagesRandomPosition();
-        setTimeout(doMasonry, 100);
-        setTimeout(makeImagesSlideIn, 2000);
+        setTimeout(doMasonry, 500);
+        setTimeout(doMasonry, 1000);
+        setTimeout(makeImagesSlideIn, 1500);
 
 
 
