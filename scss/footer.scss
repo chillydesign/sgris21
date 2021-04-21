@@ -1,0 +1,48 @@
+footer {
+  background-image: url('../img/footermap.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .top_links{
+    background: rgba($blue, .65);
+    padding: 25px 0 15px;
+    a {
+      display: block;
+      color:white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+
+  #copyright {
+    color: white;
+    background: rgba($blue, .9);
+    padding: 20px 0 5px;
+    text-align: center;
+    border-top: solid 5px rgba(255,255,255,0.9);
+    outline:solid 5px rgba($blue, .6);
+
+    a{
+      color:white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  &:after {
+    content: '';
+    background: url('../img/alert-circle.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 13%;
+background-size: 140%;
+opacity: 0.5;
+background-position: top 10px left;
+  }
+}
