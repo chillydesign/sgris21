@@ -12,8 +12,9 @@
         //MASONRY GALLERY
         putImagesRandomPosition();
         setTimeout(doMasonry, 500);
-
         setTimeout(makeImagesSlideIn, 1500);
+        setTimeout(removeOverflowfromBody, 2500);
+
 
 
 
@@ -43,12 +44,16 @@
 
         }
 
+        function removeOverflowfromBody() {
+            $body.removeClass('overflow_hidden');
+        }
+
 
         function makeImagesSlideIn() {
             $('.grid-item').removeClass('invisible');
             $('.grid-item').addClass('visible');
 
-            $body.removeClass('overflow_hidden');
+
             $body.removeClass('loading');
         }
 
