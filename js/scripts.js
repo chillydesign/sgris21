@@ -14,7 +14,7 @@
 
         function putImagesRandomPosition() {
 
-
+            $('.grid-item').addClass('invisible');
             $('.grid-item').each(function (i) {
                 var $this = $(this);
                 var randomX = (Math.random() - 0.5) * 2000;
@@ -23,7 +23,7 @@
                     "-webkit-transform": "translate(" + randomX + "px," + randomY + "px)",
                     "transform": "translate(" + randomX + "px," + randomY + "px)",
                 });
-                $this.addClass('invisible');
+
             });
         }
 
