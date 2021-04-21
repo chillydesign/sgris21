@@ -59,14 +59,14 @@ iframe {
 .grid-item {
   // float: left;
   width: 7%;
-  opacity: 1;
-  transition: all 1s;
 
-  &.invisible {
-    opacity: 0;
-  }
+  transition: all 1s;
+  opacity: 0;
+
+  &.invisible {}
 
   &.visible {
+    opacity: 1;
     transform: translate(0, 0) !important;
   }
 }
